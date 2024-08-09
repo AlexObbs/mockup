@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Plotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>X-Axis Score</th>
+                    <th>Y-Axis Score</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" class="name-field" placeholder="Name"></td>
+                    <td><input type="range" class="x-slider" min="0" max="10" value="0"> <span class="x-value">0</span>
+                    </td>
+                    <td><input type="range" class="y-slider" min="0" max="10" value="0"> <span class="y-value">0</span>
+                    </td>
+                    <td><button class="remove-row">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add-row">Add Row</button>
+        <canvas id="plot"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
